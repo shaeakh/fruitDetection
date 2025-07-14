@@ -1,0 +1,6 @@
+python -m venv .venv
+.venv\Scripts\activate.bat
+pip install fastapi uvicorn
+uvicorn app.main:app --reload
+
+python -m uvicorn app.main:app --reload
